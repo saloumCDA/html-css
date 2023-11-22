@@ -1,0 +1,65 @@
+<!--
+L'élément HTML input peut effectivement prendre différentes valeurs, déterminant ainsi le type de données qu'il accepte. 
+Selon MDN Web Docs, l'élément input est l'un des éléments les plus puissants et complexes de HTML en raison du grand nombre de combinaisons de types d'entrée et d'attributs disponibles. 
+Il peut être utilisé pour créer une variété de contrôles interactifs pour les formulaires web, en fonction du périphérique et de l'agent utilisateur. 
+Les différents types d'entrée disponibles incluent, entre autres, les types "text", "password", "checkbox", "radio", "date", "email", etc. 
+Chaque type détermine le comportement et l'apparence de l'élément input, ainsi que le type de données qu'il accepte
+-->
+
+<!--
+	1 - Réalisez un document contenant un formulaire
+	2 - En-dehors des éléments de base, ce formulaire comprend cinq champs input de type text :
+		_ prénom
+		_ nom
+		_ voie
+		_ code postal
+		_ ville
+	3 - Ajoutez des labels pour chaque champ	
+	4 - Ajoutez les champs suivants (avec les labels):
+		_ téléphone
+		_ email
+		_ date de naissance
+		_ site web
+	5 - Ouvrez cette page dans différents navigateurs.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Titre</title>
+    <style></style>
+  </head>
+  <body>
+    <form>
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" /><br />
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" /><br />
+
+      <label for="voie">Voie</label>
+      <input type="text" id="voie" /><br />
+
+      <label for="CP">CodePostal</label>
+      <input type="text" id="CP" /><br />
+
+      <label for="ville">Ville</label>
+      <input type="text" id="ville" /><br />
+
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" /><br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" /><br />
+
+      <label for="naissance">Date de naissance</label>
+      <input type="date" id="naissance" /><br />
+
+      <label for="site-web">Site web</label>
+      <input type="url" id="site-web" /><br />
+
+      <label for="submit">Confirmer</label>
+      <input type="submit" id="submit" value="Confirmer" />
+    </form>
+  </body>
+</html>
