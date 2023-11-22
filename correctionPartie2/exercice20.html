@@ -1,0 +1,89 @@
+<!--
+L'utilisation d'une police se fait au moyen de la déclaration de style suivante :
+p{
+	font-family : nomPolice1, nomPolice2, nomPolice 3;
+}
+C'est la première police déclarée qui va être utilisée si elle se trouve sur le poste client. Si celle-ci n'est pas présente, ce sera la seconde police et ainsi de suite.
+De ce fait, dans le cas où aucune police ne serait présente; à la fin de la déclaration des différentes polices, on ajoute toujours une police générique :
+_serif : police avec empattement.
+_sans-serif : police sans empattement.
+
+Parmi les polices les plus courantes (sur Windows, Mac/iOS et Androïd), on trouve :
+    Arial,  Arial Black,  Comic Sans MS,  Courier New,  Georgia, Impact, Times New Roman, Trebuchet MS, Verdana.
+
+Dans la déclaration des polices, on met les noms composés entre guillemets :
+	font-family : "Arial Black", Verdana, san-serif;
+-->
+
+<!--
+	1 - Créez un document contenant deux balises h2.
+	2 - Chaque balise h2 est suivie de deux paragraphes.
+	3 - Appliquez une police différente à chaque balise.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        font-family: Arial, sans-serif;
+      }
+      /* ///////////deux moyens */
+      h2 {
+        font-family: Georgia, serif;
+      }
+
+      /* h2:first-of-type {
+	font-family: Georgia, serif;
+} */
+      /* ///////////////////////// */
+      /* ///////////deux moyens */
+
+      p {
+        font-family: Verdana, sans-serif;
+      }
+      /* p:first-of-type {
+	font-family: Verdana, sans-serif;
+} */
+      /* ///////////////////////// */
+
+      /* ///////////deux moyens */
+
+      p + h2 {
+        font-family: "Courier New", monospace;
+      }
+      /* h2:last-of-type {
+	font-family: 'Courier New', monospace;
+} */
+      /* ///////////////////////// */
+
+      /* ///////////deux moyens */
+      p+h2+p {
+        font-family: "Lucida Sans Unicode", sans-serif;
+      /* p:last-of-type {
+        font-family: "Lucida Sans Unicode", sans-serif; */
+      }
+      /* ///////////////////////// */
+    </style>
+    <title>exercice20</title>
+  </head>
+  <body>
+    <h1>exercice20</h1>
+    <h2>1er h2</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quis
+      molestias facilis accusantium vitae obcaecati minima, officiis, saepe
+      doloribus repellendus minus corporis laudantium, iure maiores porro. Iste
+      reiciendis id mollitia!
+    </p>
+    <h2>eme h2</h2>
+    <p>
+      Totam, illo dicta sint reprehenderit perspiciatis pariatur voluptatum
+      possimus. Deserunt dicta tenetur obcaecati molestiae doloremque quis nihil
+      architecto sequi, inventore ipsa et culpa eligendi officiis expedita cum
+      ducimus ex. Eius.
+    </p>
+  </body>
+</html>

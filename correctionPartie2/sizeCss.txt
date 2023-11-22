@@ -1,0 +1,23 @@
+px : les pixels sont une unité de mesure fixe. Cela signifie que la taille d'un élément est définie en nombre de pixels, peu importe la taille de la fenêtre ou l'appareil utilisé pour afficher la page. Par exemple, font-size: 16px définit la taille de la police à 16 pixels.
+
+% : les pourcentages sont une unité de mesure relative qui est souvent utilisée pour les dimensions d'un élément par rapport à son conteneur parent. Par exemple, width: 50% définit la largeur d'un élément à 50% de la largeur de son conteneur parent.
+
+em : les ems sont une unité de mesure relative basée sur la taille de police de l'élément parent. Par exemple, si l'élément parent a une taille de police de 16 pixels, font-size: 1em définit la taille de police à 16 pixels, tandis que font-size: 2em la définit à 32 pixels.
+
+rem : les rems sont similaires aux ems, mais ils sont basés sur la taille de police de la racine de l'élément HTML (<html>). Cela les rend plus faciles à utiliser pour les mises en page responsives, car vous pouvez définir la taille de police de la racine une fois, puis utiliser des rems pour tout le reste. Par exemple, si la taille de police de la racine est définie à 16 pixels, font-size: 1rem définit la taille de police à 16 pixels, tandis que font-size: 2rem la définit à 32 pixels.
+
+En résumé, les pixels sont une unité de mesure fixe, les pourcentages sont une unité de mesure relative par rapport au conteneur parent, les ems sont une unité de mesure relative basée sur la taille de police de l'élément parent, et les rems sont une unité de mesure relative basée sur la taille de police de la racine de l'élément HTML.
+
+
+:root {
+  font-size: 16px;
+}
+Dans ce code, le sélecteur ":root" cible l'élément HTML de niveau supérieur, et la propriété "font-size" définit la taille de police à 16 pixels.
+
+Il est important de noter que la taille de police de la racine affectera toutes les autres tailles de police sur la page, sauf si elles sont explicitement définies avec une taille différente.
+​
+
+
+
+
+There

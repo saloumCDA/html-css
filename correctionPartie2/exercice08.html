@@ -1,0 +1,78 @@
+<!--
+Pour afficher un caractère spécial dans une page web, vous pouvez utiliser l'entité HTML correspondante 
+	https://www.w3schools.com/html/html_entities.asp
+
+La balise pre permet de représenter du texte préformaté qui sera affiché tel qu'il est écrit dans le code.
+La balise code permet de représenter du code source à l'intérieur d'un document HTML. 
+
+-->
+
+<!--
+Vous devez reproduire la capture d'écran 08 - Exercice 8.png
+
+Voici le texte de ce document :
+
+Le Web est né de l'intuition de quelques hommes. Tim Berners-Lee fait partie de ceux-ci : « Je n'ai fait que prendre le principe d’hypertexte et le relier au principe du TCP et du DNS et alors – boum ! – ce fut le World Wide Web ! »  déclare-t-il dans Answers for Young People.
+Cette simplicité se retrouve dans la structure de nos pages web actuelles en HTML5 :
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Titre de la page</title>
+	</head>
+	<body>
+		<p>Un texte tout simple</p>
+	</body>
+</html>
+-->
+
+<!--
+	1 - Créez un document HTML et recopiez le texte.
+	2 - Vous pouvez choisir une couleur de fond en CSS comme vous choisissez une couleur pour la police avec la propriété : background-color.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 8</title>
+    <style>
+      span {
+        background-color: yellow;
+      }
+      div {
+        background-color: black;
+        color: white;
+		width:fit-content	 ;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice8</h1>
+    <p>
+      <span> Le Web est né de l'intuition de quelques hommes.</span> Tim
+      Berners-Lee fait partie de ceux-ci :
+      <em
+        >« Je n'ai fait que prendre le principe d’hypertexte et le relier au
+        principe du TCP <br />
+        et du DNS et alors – boum ! – ce fut le World Wide Web ! »</em
+      >
+      déclare-t-il dans Answers for Young People. Cette simplicité se retrouve
+      dans la structure de nos pages web actuelles en HTML5 :
+    </p>
+    <hr />
+    <pre>
+<div>&lt;!DOCTYPE html&gt;</div>
+<div> &lt;html&gt;</div>
+	<div> &lt;head&gt;</div>
+		<div> &lt;meta charset="utf-8"&gt;</div>
+		<div> &lt;title&gt;Titre de la page&lt;/title&gt;</div>
+	<div> &lt;/head&gt;</div>
+	<div> &lt;body&gt;</div>
+		<div> &lt;p&gt;Un texte tout simple&lt;/p&gt;</div>
+	<div> &lt;/body&gt;</div>
+<div> &lt;/html&gt;</div>
+		</pre
+    >
+  </body>
+</html>

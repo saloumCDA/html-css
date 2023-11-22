@@ -1,0 +1,45 @@
+<!--
+Dans une liste non ordonnée ou ordonnée, on peut modifier l'apparence des li au moyen de la déclaration CSS list-style-type.  
+https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y insérez une liste à puce contenant cinq entrées.
+	3 - Dans la troisième entrée, vous insérez une autre liste à puce comprenant trois entrées.
+	4 - Changez le type de puce de cette dernière liste.
+	5 - Masquez la puce de la cinquième entrée de la liste.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercice26</title>
+    <style>
+      li ul {
+        list-style-type: "\1F44D";
+      }
+      ul li:nth-child(5) {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice26</h1>
+    <ul>
+      <li>ul li liste à puce</li>
+      <li>ul li liste à puce</li>
+      <li>
+        <ul>
+          <li>une autre liste à puce</li>
+          <li>une autre liste à puce</li>
+          <li>une autre liste à puce</li>
+        </ul>
+      </li>
+      <li>ul li liste à puce</li>
+      <li>ul li liste à puce</li>
+    </ul>
+  </body>
+</html>

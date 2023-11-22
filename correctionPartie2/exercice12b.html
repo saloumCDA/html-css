@@ -1,0 +1,60 @@
+<!--
+La propriété display permet de changer le comportement d'une balise.
+Ainsi, il est possible d'écrire display: block pour qu'une balise soit de type block ou bien display: inline.
+-->
+
+<!--
+	1 - Reprenez le code de l'exercice précédent.
+	2 - Réalisez le même type d'affichage en inversant les span et les span (chaque span contient une div)
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercice12a</title>
+    <style>
+      span {
+        display: block;
+        color: brown;
+        background-color: antiquewhite;
+        width: fit-content;
+      }
+      span + span {
+        color: rgb(236, 14, 14);
+        background-color: rgb(108, 115, 206);
+      }
+      span + span + span {
+        color: rgb(72, 30, 150);
+        background-color: rgb(211, 63, 108)=
+      }
+      div {
+        display: inline;
+        color: rgb(253, 246, 246);
+        background-color: rgb(12, 12, 12);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice12b</h1>
+    <span>
+      1 span Lorem <div>spannnnnnnnnnnn</div> ipsum, dolor sit amet consectetur
+      adipisicing elit. Accusantium iure aspernatur ea non, asperiores optio
+      sequi doloribus inventore quis! Voluptatibus quasi corporis ut mollitia
+      excepturi? Inventore molestiae quo repudiandae itaque.
+    </span>
+    <span>
+      2 span Fugit<div>spannnnnnnnnnnn</div> vitae vero non, enim laborum
+      nostrum voluptatum omnis eaque quibusdam, mollitia maiores soluta, et vel
+      aut accusamus aspernatur placeat itaque. Corporis, nihil labore tenetur
+      quisquam fugiat numquam eaque saepe.
+    </span>
+    <span>
+      3 span Voluptates voluptas earum volupta<div>spannnnnnnnnnnn</div>tum,
+      iste doloribus alias libero eligendi dicta possimus autem eos similique
+      cumque placeat deleniti fuga id consequuntur omnis. Sit laboriosam sint
+      quos. Delectus veniam alias quidem beatae.
+    </span>
+  </body>
+</html>

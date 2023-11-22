@@ -1,0 +1,47 @@
+<!--
+Toute balise bloc peut être redimensionnée en CSS en définissant la largeur (width) et la hauteur (height).
+La dimension peut être donnée en pixel, em, rem ou en pourcentage.
+-->
+
+<!--
+	1 - Créez un document.
+	2 - Vous y insérez trois div ayant chacune une couleur de fond différente.
+	3 - Donnez à la première div une taille.
+	4 - Donnez à la seconde div une autre taille. 
+	5 - Donnez à la troisième div une  hauteur égale à 150px et une largeur égale à la moitié de la fenêtre.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercice27</title>
+    <style>
+      div:nth-of-type(1) {
+        background-color: red;
+        width: 3rem;
+        height: 3rem;
+      }
+
+      div:nth-of-type(2) {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: green;
+      }
+
+      div:nth-of-type(3) {
+        width: 50%;
+        height: 150px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice27</h1>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+  </body>
+</html>

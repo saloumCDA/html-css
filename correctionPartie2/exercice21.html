@@ -1,0 +1,62 @@
+<!--
+Il est possible d'utiliser d'autres polices que celles présentes sur le poste client.
+Pour se faire, il est nécessaire de fournir la police au moyen de la règle CSS @font-face (voir https://developer.mozilla.org/fr/docs/Web/CSS/@font-face).
+Il est nécessaire d'utiliser plusieurs formats de police, tous les navigateurs ne supportant pas le même format de police (cf. tableau "Browser Support" http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp)
+Après cela, on utilise la police dans les balises souhaitées au moyen de la déclaration présentée dans l'exercice précédent.
+-->
+<!--
+	1 - Créez un document.
+	2 - Sur le site http://www.fontsquirrel.com/. Téléchargez deux polices :
+		A - Dans Font Filter, choisissez Webfont.
+		B - Choisisser une police.
+		C - Sur la fiche de la police, choisissez Webfont Kit.
+		D - Téléchargez en choisissant tous les formats.
+	3 - Ajoutez bien les deux règles @font-face au début du CSS.
+	4 - Créez deux paragraphes.
+	5 - Appliquez une police différente à chaque paragraphe.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "allura";
+        src: url(./font/allura/Allura-Regular.otf);
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "anudaw";
+        src: url("./font/AnuDaw/ANUDI___.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      p {
+        font-family: allura;
+      }
+      p + p {
+        font-family: anudaw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ex 21</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+      reprehenderit officia. Eum molestiae delectus nihil nemo, reprehenderit
+      atque dolorem consequatur incidunt porro sapiente! Harum reprehenderit, ex
+      dicta similique nisi omnis?
+    </p>
+    <p>
+      Praesentium libero minus ab obcaecati ut repudiandae blanditiis
+      consectetur consequuntur et pariatur numquam aperiam ipsa animi porro
+      facilis accusantium mollitia eius placeat dolores in, eos excepturi nulla.
+      Ut, aspernatur molestiae?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+Au lieu de stocker des polices sur le serveur qui seront téléchargées par le poste client, on peut utiliser des polices proposées par un site tiers tel Google Fonts.
+-->
+
+<!--
+	1 - Créez un document avec trois balises h2.
+	2 - Choisissez trois polices sur Google Fonts (http://www.google.com/fonts/). Pour ce faire, cliquez sur Quick-use (deuxième bouton à gauche de Add to Collection).
+	3 - Chaque balise h1 est suivie d'un paragraphe.
+	4 - Appliquez un style différent à chaque balise.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>exercice22</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+      h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+        color: #FF0000;
+      }
+      h1 + p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #000000;
+      }
+      h1:nth-of-type(2) {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 72px;
+        color: #00FF00;
+      }
+      h1:nth-of-type(2) + p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #000000;
+      }
+      h1:nth-of-type(3) {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        color: #0000FF;
+      }
+      h1:nth-of-type(3) + p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>exercice22</h1>
+    <p>Paragraphe associé au titre 1.</p>
+    <h1>Titre 2</h1>
+    <p>Paragraphe associé au titre 2.</p>
+    <h1>Titre 3</h1>
+    <p>Paragraphe associé au titre 3.</p>
+  </body>
+</html>
+<!-- Les trois polices de caractères choisies sont Roboto, Montserrat et Open Sans, chacune avec un style différent appliqué à chaque balise h1. -->

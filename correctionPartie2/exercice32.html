@@ -1,0 +1,54 @@
+<!--
+Jusqu'à maintenant, nous avons appliqué une couleur de fond à nos blocs.
+On peut également appliquer une image à un bloc.
+de la façon suivante :
+p{
+	background-image: url("fond.jpg");
+}
+Plusieurs réglages supplémentaires sont possibles :
+_ background-position : position initiale d'une image d'arrière-plan
+_ background-origine : position de l'origine d'une image
+_ background-size: dimension de l'image d'arrière-plan 
+_ background-repeat :  spécifie la façon dont l'image d'arrière-plan doit être répétée
+
+-->
+
+<!--
+	1 - Créez un document avec un h1 et un paragraphe.
+	2 - Mettez une image d'arrière plan sur le h1. Choisissez une image de quelques pixels de côté.
+	3 - Mettez une image d'arrière plan sur le paragraphe. L'image sera moins grande que la largeur de la page. Faites répéter cette image. 
+	4 - Mettez une image d'arrière plan sur le body. À l'aide de background-size, remplissez la page sans déformer l'image.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>exercice32</title>
+	<style>
+		body{
+			background-image: url('./35\ -\ Exercice\ 35.jpg');
+
+			background-size:cover;
+		}
+		h1 {
+  background-image: url('./35\ -\ Exercice\ 35.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+p {
+	background-image: url('./35\ -\ Exercice\ 35.jpg');
+	background-repeat: repeat;
+	background-position: center;
+  background-size: 10%;
+}
+
+	</style>
+</head>
+<body>
+	<h1>exercice32</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat dicta alias velit harum porro libero. Ipsa error, repudiandae nesciunt eum deleniti magni dolorem accusamus nisi quisquam, voluptatum nulla. Repudiandae!</p>
+</body>
+</html>

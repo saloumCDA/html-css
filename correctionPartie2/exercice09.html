@@ -1,0 +1,44 @@
+<!-- 
+Les sélecteurs de class et d'id permettent de mettre un nom sur une balise pour la viser précisément en CSS. Par exemple, <p class="paragraphe-important">. Le selecteur de class peut être utilisé plusieurs fois dans le même document contrairement à l'id qui doit être unique. Pour les balises paires, il est toujours écrit dans la balise ouvrante. Enfin, le nom ne doit pas contenir d'espace (lettre, chiffre ainsi que - et _ uniquement) et ne peut commencer que par une lettre.
+Par exemple, class="mon_etiquette" id="Balise21".
+-->
+
+<!--
+	 Créez cinq binômes titre-paragraphe.
+	 À l'aide de deux class, changez la couleur de police deux titres et la couleur d'arrière plan de deux titres.
+	 Grâce à deux id, changez la couleur d'arrière plan de l'un des titres visé par une class et la couleur de police de l'un des paragraphes visé par une class.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice09</title>
+    <style>
+      .titreRouge {
+        color: rgb(190, 156, 156);
+      }
+      .titreVert {
+        color: rgb(240, 14, 63);
+      }
+      .fondBleu {
+        background-color: blue;
+        width:fit-content ;
+      }
+      .fondJaune {
+        width:fit-content ;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="titreRouge fondJaune">exercice09</h1>
+    <p>Trois mots du premier paragraphe.</p>
+    <h2 class="titreVert fondBleu">Deuxième titre</h2>
+    <p>Trois mots du deuxième paragraphe.</p>
+    <h3>Troisième titre</h3>
+    <p class="fondBleu">Trois mots du troisième paragraphe.</p>
+    <h4>Quatrième titre</h4>
+    <p>Trois mots du quatrième paragraphe.</p>
+    <h5>Cinquième titre</h5>
+    <p class="titreRouge">Trois mots du cinquième paragraphe.</p>
+  </body>
+</html>
